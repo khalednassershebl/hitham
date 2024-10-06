@@ -53,7 +53,7 @@
         }
         .header-btn {
             background: #409fff;
-            background-image: linear-gradient(90deg, #fbc771 0%, #003951 100%);
+            background-image: linear-gradient(90deg, #c5ae79 0%, #383735 100%);
             color: #FFF;
             text-align: center;
             transition: all 0.3s ease-in-out;
@@ -133,7 +133,7 @@
                 padding-right: 25px;
                 &::placeholder {
                     font-size: 0.8rem;
-                    color: #c37d3f;
+                    color: #383735;
                     font-weight: 600;
                 }
                 &:focus {
