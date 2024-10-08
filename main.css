@@ -1236,6 +1236,8 @@ p.text a {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding: 50px 0;
+  display: grid;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2410,6 +2412,94 @@ p.text a {
   right: 12px;
 }
 
+.coures-content {
+  overflow: auto;
+  padding: 100px 0;
+}
+.coures-content::-webkit-scrollbar {
+  display: none;
+}
+.coures-content .course-details {
+  display: flex;
+  align-items: center;
+  background: #FFF;
+  color: #3e3f5e;
+  border-radius: 12px;
+  box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+  font-size: 0.9rem;
+  padding: 25px 25px;
+  margin-bottom: 15px;
+}
+@media (max-width: 575.98px) {
+  .coures-content .course-details {
+    margin-bottom: 8px;
+  }
+}
+.coures-content .course-details .course-lesson-head {
+  color: #3e3f5e;
+  display: flex;
+  align-items: center;
+}
+.coures-content .course-details .course-lesson-head svg {
+  height: 27px;
+  width: 27px;
+  background: #f9f1df;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 0 0 10px;
+  line-height: 20px;
+  padding: 3px;
+}
+.coures-content .course-details .course-lesson-head svg g [fill] {
+  fill: #c5ae79;
+}
+.coures-content .course-details .course-lesson-head .course-lesson-title {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.coures-content .course-video {
+  max-width: 100%;
+  background: #FFF;
+  color: #3e3f5e;
+  border-radius: 12px;
+  box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+  padding: 25px 25px;
+  margin-bottom: 15px;
+}
+@media (max-width: 575.98px) {
+  .coures-content .course-video {
+    padding: 0;
+    margin-bottom: 8px;
+  }
+}
+.coures-content .course-video video {
+  box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+  border-radius: 12px;
+}
+.coures-content .course-video .plyr__control--overlaid {
+  background: #c5ae79;
+}
+.coures-content .course-video .plyr--full-ui input[type=range] {
+  color: #c5ae79;
+}
+.coures-content .course-video .plyr--video .plyr__control.plyr__tab-focus, .coures-content .course-video .plyr--video .plyr__control:hover, .coures-content .course-video .plyr--video .plyr__control[aria-expanded=true] {
+  background: #c5ae79;
+}
+.coures-content .course-video .plyr__video-wrapper {
+  background: #FFF;
+}
+.coures-content .course-video .plyr--video {
+  border-radius: 12px;
+}
+.coures-content .course-video .plyr__poster {
+  border-radius: 12px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -2715,6 +2805,29 @@ a:hover {
 }
 @media (max-width: 575.98px) {
   .index-header .header-content h1 {
+    width: 100%;
+    font-size: 2rem;
+  }
+}
+.index-header .header-content h6 {
+  color: #FFF;
+  width: 100%;
+  margin: -5px auto 15px auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media (max-width: 991.98px) {
+  .index-header .header-content h6 {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .index-header .header-content h6 {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .index-header .header-content h6 {
     width: 100%;
     font-size: 2rem;
   }
