@@ -73,3 +73,12 @@ wind.on("scroll", function () {
   }
 });
 // new WOW().init();
+
+$(document).ready(function () {
+  // This Is For Animation Links
+ $("header .navbar .nav-links ul li a").on("click", function () {
+     $("html, body").animate({
+         scrollTop: $("#" + $(this).data("id")).offset().top - 0
+     }, 1100);
+ });
+});
